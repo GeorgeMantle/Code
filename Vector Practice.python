@@ -1,0 +1,27 @@
+num = [-1,2,-4,5,-6,54,-2,24,4]
+
+def output():
+    for i in range (len(num)):
+        print(num[i])
+        
+#output()
+
+def negative():
+    for i in range (len(num)):
+        if num[i] < 0:
+            print(num[i])
+        
+        
+#negative()
+
+
+def search ():
+    NumSearch = int(input("what number you looking for"))
+    for i in range(len(num)):
+        if num[i] == NumSearch:
+            print ("it is in this list")
+            
+        else:
+            i = i+1 
+            print("not in the list")
+search ()
